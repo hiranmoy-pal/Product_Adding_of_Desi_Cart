@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,900';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900';
+
+@font-face {
+    font-family: geetanjalibold;
+    src: url(../css/GeetanjaliUni-Bold.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: shree;
+    src: url(../css/SHREE0592.eot);
+    src: url(../css/SHREE0592.eot?#iefix) format('embedded-opentype'), url(../css/SHREE0592.woff) format('woff'), url(../css/SHREE_BAN_OTF_0592.ttf) format('truetype'), url(../css/shree0592.svg#shree) format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA
+}
+
+/* CSS Document */
+:root {
+
+    --black: #000;
+    --white: #fff;
+    --gray: #B8B8B8;
+    --gray2: #333333;
+    --gray3: #22222E;
+    --gray4: #323232;
+    --blue: #33D9FB;
+    --pink: #E53777;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scf-box {
+    padding: 40px;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 5px 3px #ecebeb;
+    width: 100%;
+
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    background: #fff;
+    color: #9d0f1d;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    box-shadow: 0px 1px 5px 3px #ecebeb;
+}
+
+.form-container .form-control {
+    border: 1px #a4a1a1 solid
+}
+
+.img-rounded {
+    border-radius: 4px;
+}
+
+.txt-bengali {
+    font-family: 'shree';
+}
+
+.filebrowse {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.filebrowse label {
+    margin: 0 10px 0 0;
+}
+
+.form-container .small {
+    font-style: italic;
+    color: #ffb1d9;
+}
+
+.scf-ban {
+    background: #9c004c;
+    height: 100%;
+}
+
+.scf-ban img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media(max-width:480px) {
+    .top-head {
+        font-size: 15px;
+        /* padding: 5px 22px; */
+        max-width: 81%;
+    }
+
+    .scf-box {
+        padding: 20px;
+    }
+
+    .videoWrapper {
+        margin-top: 20px;
+    }
+
+}
+
+/*////////////////////////////*/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff5fa;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 510px;
+    text-align: center;
+}
+
+.loadmodal-content {
+    background-color: #fff5fa;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto;
+    max-width: 510px;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content p {
+    text-align: center;
+}
+
+img.sucimg {
+    width: 70px;
+    margin: auto;
+}
+
+.form-group label {
+    color: #19af46;
+    font-size: 1.2rem !important;
+    font-family: GeetanjaliUniBold;
+    font-weight: 700;
+}
+
+.form-group input {
+    font-size: 0.9rem !important;
+}
+
+.btn-info {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.template {
+    background: #fff;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.wordCount {
+    padding-top: 8px;
+    padding-left: 2px;
+    font-size: small;
+}
+
+.gender {
+    font-size: 0.9rem !important;
+    color: #000;
+}
+
+.top-head{
+  background: #9a1459;
+}

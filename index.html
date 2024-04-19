@@ -1,0 +1,1328 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="utf-8"> -->
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Addition | Desi Cart</title>
+  <link rel="icon" type="image/x-icon" href="http://www.w3.org/2000/svg">
+  <link href="https://beta.admissiontree.in/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://www.sananda.in/assets/css/style.css" rel="stylesheet" media="all">
+  <link href="css/style-contest.css" rel="stylesheet" media="all">
+  <title>Product Addition | Desi Cart</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDM39DK9ZX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EDM39DK9ZX');
+  </script>
+
+  <style>
+    .form-group {
+      margin-bottom: 2rem;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!--******************** MASTER CATEGORY *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <!-- Women in our lives Contest -->
+        <div class="top-head">ADD Master CATEGORY</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+
+                <!-- Form start -->
+                <form id="contest-form">
+
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Master Category </span><span
+                            class="required">*</span></label>
+                        <input type="text" name="masterCategoryName" class="form-control" id="masterCategoryName"
+                          placeholder="Enter Master Category">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Description of Master Category</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="masterCategoryDescription" class="form-control"
+                          id="masterCategoryDescription" placeholder="Enter Your Description"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center">
+                      <button class="btn btn-info" id="saveMasterCategoryBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** CATEGORY *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">ADD CATEGORY</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-category">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Master Category </span><span
+                            class="required">*</span></label>
+                        <select id="dropdownMasterCategoryNameForCategory">
+                          <option value="" name="masterCategoryNameForCategory" class="form-control"
+                            id="masterCategoryNameForCategory">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Category Name</span><span class="required">*</span></label>
+                        <input type="text" name="categoryName" class="form-control" id="categoryName"
+                          placeholder="Enter Category Name">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label><span class="txt-bengali">Description of Category</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="categoryDescription" class="form-control" id="categoryDescription"
+                          placeholder="Enter Your Description"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center ">
+                      <button class="btn btn-info" id="saveCategoryBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** SUB CATEGORY *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">ADD SUB CATEGORY</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-subcategory">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Master Category </span><span
+                            class="required">*</span></label>
+                        <select id="dropdownMasterCategoryNameForSubCategory">
+                          <option value="" name="masterCategoryNameForSubCategory" class="form-control"
+                            id="masterCategoryNameForSubCategory">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Category </span><span class="required">*</span></label>
+                        <select id="dropdownCategoryNameForSubCategory">
+                          <option value="" name="categoryNameForSubCategory" class="form-control"
+                            id="categoryNameForSubCategory">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Sub Category Name</span><span
+                            class="required">*</span></label>
+                        <input type="text" name="subCategoryName" class="form-control" id="subCategoryName"
+                          placeholder="Enter Sub Category Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Description of Sub Category</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="subCategoryDescription" class="form-control"
+                          id="subCategoryDescription" placeholder="Enter Your Description"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center ">
+                      <button class="btn btn-info" id="saveSubCategoryBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** BRAND *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">ADD BRAND</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-brand">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Brand Name </span><span class="required">*</span></label>
+                        <input type="text" name="brandName" class="form-control" id="brandName"
+                          placeholder="Enter Your Brand Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Description of Brand</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="brandDescription" class="form-control" id="brandDescription"
+                          placeholder="Enter Your Brand Description"></textarea>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label><span class="txt-bengali">Address of Brand</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="brandAddress" class="form-control" id="brandAddress"
+                          placeholder="Enter Your Brand Address"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center">
+                      <button class="btn btn-info" id="saveBrandBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** PRODUCT *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">ADD PRODUCT</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-product">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Master Category </span><span
+                            class="required">*</span></label>
+                        <select id="dropdownMasterCategoryNameForProduct">
+                          <option value="" name="masterCategoryNameForProduct" class="form-control"
+                            id="masterCategoryNameForProduct">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Category </span><span class="required">*</span></label>
+                        <select id="dropdownCategoryNameForProduct">
+                          <option value="" name="categoryNameForProduct" class="form-control"
+                            id="categoryNameForProduct">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Sub Category </span><span
+                            class="required">*</span></label>
+                        <select id="dropdownSubCategoryNameForProduct">
+                          <option value="" name="subCategoryNameForProduct" class="form-control"
+                            id="subCategoryNameForProduct">Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Brand </span><span class="required">*</span></label>
+                        <select id="dropdownBrandNameForProduct">
+                          <option value="" name="brandNameForProduct" class="form-control" id="brandNameForProduct">
+                            Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Product Name</span><span class="required">*</span></label>
+                        <input type="text" name="productName" class="form-control" id="productName"
+                          placeholder="Enter Product Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Gender</span><span class="required">*</span></label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <span class="gender" for="male">Male</span>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <span class="gender" for="female">Female</span>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <span class="gender" for="other">Other</span>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Product Average Rating</span><span
+                            class="required">*</span></label>
+                        <input type="text" name="productAvgRating" class="form-control" id="productAvgRating"
+                          placeholder="Enter Product Rating">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Add Product Material</span><span
+                            class="required">*</span></label>
+                        <input type="text" name="material" class="form-control" id="material"
+                          placeholder="Enter Product Material">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label><span class="txt-bengali">Description of Product</span> :<span
+                            class="required">*</span></label>
+                        <textarea type="text" name="productDescription" class="form-control" id="productDescription"
+                          placeholder="Enter Your Description"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center ">
+                      <button class="btn btn-info" id="saveProductBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** PRODUCT SKU *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">ADD PRODUCT SKU</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-product-sku">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Select Product </span><span class="required">*</span></label>
+                        <select id="dropdownProductForProductSku">
+                          <option value="" name="productForProductSku" class="form-control" id="productForProductSku">
+                            Select an option</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Size</span><span class="required">*</span></label>
+                        <input type="text" name="size" class="form-control" id="size" placeholder="Enter size">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Colour</span> :<span class="required">*</span></label>
+                        <input type="text" name="colour" class="form-control" id="colour"
+                          placeholder="Enter colour"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">MRP</span> :<span class="required">*</span></label>
+                        <input type="text" name="mrp" class="form-control" id="mrp"
+                          onkeypress="return decimalKey(event)" placeholder="Enter mrp"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Discount Percentage</span> :<span
+                            class="required">*</span></label>
+                        <input type="text" name="discountPercentage" class="form-control" id="discountPercentage"
+                          placeholder="Enter Discount Percentage" onkeypress="return decimalKey(event)"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Quantity</span> :<span class="required">*</span></label>
+                        <input type="text" name="quantity" class="form-control" id="quantity"
+                          placeholder="Enter Quantity"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Available Pincodes</span> :<span
+                            class="required">*</span></label>
+                        <input type="text" name="availablePincodes" class="form-control" id="availablePincodes"
+                          placeholder="Enter Available Pincodes" onkeypress="return onlyNumberKey(event)" maxlength="6"
+                          minlength="6"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image1</span> :<span class="required">*</span></label>
+                        <input type="text" name="image1" class="form-control" id="image1"
+                          placeholder="Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image2</span> :<span class="required">*</span></label>
+                        <input type="text" name="image2" class="form-control" id="image2"
+                          placeholder="Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image3</span> :<span class="required">*</span></label>
+                        <input type="text" name="image3" class="form-control" id="image3"
+                          placeholder="Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image4</span> :<span class="required">*</span></label>
+                        <input type="text" name="image4" class="form-control" id="image4"
+                          placeholder="Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image5</span> :<span class="required">*</span></label>
+                        <input type="text" name="image5" class="form-control" id="image5"
+                          placeholder="Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image6</span> :<span class="required">*</span></label>
+                        <input type="text" name="image6" class="form-control" id="image6
+                          placeholder=" Enter image url"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Image7</span> :<span class="required">*</span></label>
+                        <input type="text" name="image7" class="form-control" id="image7"
+                          placeholder="Enter image url"></input>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center ">
+                      <button class="btn btn-info" id="saveProductSkuBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--******************** REVIEW *************************-->
+
+  <section class="template">
+    <div class="container">
+      <div class="row">
+        <div class="top-head">Review</div>
+        <div class="scf-box">
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="form-container">
+                <!-- Form start -->
+                <form id="contest-form-review">
+                  <div class="tform-container">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Name</span> :<span class="required">*</span></label>
+                        <input type="text" name="customerName" class="form-control" id="customerName"
+                          onkeypress="return checknameValue(event)" placeholder="Enter your name"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Email</span> :<span class="required">*</span></label>
+                        <input type="text" name="customerEmail" class="form-control" id="customerEmail"
+                          placeholder="Enter your Email Address"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Rating</span> :<span class="required">*</span></label>
+                        <input type="text" name="rating" class="form-control" id="rating"
+                          onkeypress="return decimalKey(event)" placeholder="Enter your rating"></input>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label><span class="txt-bengali">Product Id</span> :<span class="required">*</span></label>
+                        <input type="text" name="productId" class="form-control" id="productId"
+                          placeholder="Enter product id"></input>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label><span class="txt-bengali">Review</span> :<span class="required">*</span></label>
+                        <textarea type="text" name="review" class="form-control" id="review"
+                          placeholder="Enter your review"></textarea>
+                      </div>
+                    </div>
+                    <div class="pt-1 text-center ">
+                      <button class="btn btn-info" id="saveReviewBtn" type="button">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/success.png" class="sucimg">
+      <p>Thank you for registering with us..</p>
+    </div>
+
+  </div>
+
+  <div id="loadModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="loadmodal-content">
+      <img src="images/loading.gif" class="sucimg">
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script>
+
+    var modal = document.getElementById("myModal");
+
+    var loadmodal = document.getElementById("loadModal");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    //********************************** SAVE MASTER CATEGORY ***********************************//
+
+    $(document).ready(function () {
+      $("#saveMasterCategoryBtn").click(function () {
+        if ($('#masterCategoryName').val() == '') {
+          alert("Please add master category !");
+          $('#masterCategoryName').focus();
+        } else if ($('#masterCategoryDescription').val() == '') {
+          alert("Please enter your description!");
+          $('#masterCategoryDescription').focus();
+        } else {
+          loadmodal.style.display = "block";
+          var jsonData = {
+            "masterCategoryName": $('#masterCategoryName').val(),
+            "mastercategoryDescription": $('#masterCategoryDescription').val(),
+          };
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/master-category",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    })
+
+    //*********************************** SAVE CATEGORY **************************************//
+
+    $(document).ready(function () {
+      $("#saveCategoryBtn").click(function () {
+
+        if ($('#categoryName').val() == '') {
+          alert("Please add category !");
+          $('#categoryName').focus();
+
+        } else if ($('#categoryDescription').val() == '') {
+          alert("Please enter your description!");
+          $('#categoryDescription').focus();
+        } else {
+          loadmodal.style.display = "block";
+
+          // Get the selected master category details from the selected option
+          var selectedOption = $('#dropdownMasterCategoryNameForCategory').find(":selected");
+          var masterCategoryId = selectedOption.val();
+          var masterCategoryName = selectedOption.text();
+          var jsonData = {
+            "categoryName": $('#categoryName').val(),
+            "categoryDescription": $('#categoryDescription').val(),
+            "masterCategoryDto": {
+              "masterCategoryId": masterCategoryId,
+              "masterCategoryName": masterCategoryName
+            }
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/category",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              console.log(jsonData);
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-category").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    });
+
+    //***************************** GET MASTER CATEGORY FOR CATEGORY ***********************************//
+
+    $(document).ready(function () {
+      // Function to fetch data from the backend and populate the dropdown
+      function populateDropdown() {
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/master-category',
+          type: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownMasterCategoryNameForCategory').empty();
+            $('#dropdownMasterCategoryNameForCategory').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownMasterCategoryNameForCategory').append('<option value="' + item.masterCategoryId + '">' + item.masterCategoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching dropdown data: ', error);
+          }
+        });
+      }
+      // Populate the dropdown when the page loads
+      populateDropdown();
+      // Event listener for when an option in the dropdown is clicked
+      $('#dropdownMasterCategoryNameForCategory').on('change', function () {
+        var selectedValue = $(this).val(); // Get the selected value
+        $(this).val(selectedValue).change(); // Set the selected value again to trigger change event
+      });
+    });
+
+    //********************************** SAVE SUB CATEGORY ***********************************//
+
+    $(document).ready(function () {
+      $("#saveSubCategoryBtn").click(function () {
+
+        if ($('#subCategoryName').val() == '') {
+          alert("Please add sub category !");
+          $('#subCategoryName').focus();
+
+        } else if ($('#subCategoryDescription').val() == '') {
+          alert("Please enter your description!");
+          $('#subCategoryDescription').focus();
+        } else {
+          loadmodal.style.display = "block";
+
+          // Get the selected master category details from the selected option
+          var selectedOption = $('#dropdownMasterCategoryNameForSubCategory').find(":selected");
+          var masterCategoryId = selectedOption.val();
+          var masterCategoryName = selectedOption.text();
+
+          // Get the selected category details from the selected option
+          var selectedOption2 = $('#dropdownCategoryNameForSubCategory').find(":selected");
+          var categoryId = selectedOption2.val();
+          var categoryName = selectedOption2.text();
+
+          var jsonData = {
+            "subCategoryName": $('#subCategoryName').val(),
+            "subCategoryDescription": $('#subCategoryDescription').val(),
+            "masterCategoryDto": {
+              "masterCategoryId": masterCategoryId,
+              "masterCategoryName": masterCategoryName
+            },
+            "categoryDto": {
+              "categoryId": categoryId,
+              "categoryName": categoryName
+            }
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/sub-category",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              console.log(jsonData);
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-subcategory").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    });
+
+    //***************************** GET MASTER CATEGORY AND CATEGORY FOR SUB CATEGORY ***********************************// 
+
+    $(document).ready(function () {
+      // Function to fetch master categories from the backend and populate the dropdown
+      function populateMasterCategoryDropdown() {
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/master-category',
+          type: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownMasterCategoryNameForSubCategory').empty();
+            // Add default option
+            $('#dropdownMasterCategoryNameForSubCategory').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownMasterCategoryNameForSubCategory').append('<option value="' + item.masterCategoryId + '">' + item.masterCategoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching master category dropdown data: ', error);
+          }
+        });
+      }
+      // Populate the master category dropdown when the page loads
+      populateMasterCategoryDropdown();
+      // Event listener for when the user selects a master category
+      $('#dropdownMasterCategoryNameForSubCategory').on('change', function () {
+        var selectedMasterCategoryName = $(this).find(':selected').text(); // Get the selected master category name
+        populateCategoryDropdown(selectedMasterCategoryName); // Populate the category dropdown based on the selected master category
+      });
+      // Function to fetch categories based on the selected master category and populate the dropdown
+      function populateCategoryDropdown(selectedMasterCategoryName) {
+        // Make an AJAX request to fetch categories based on the selected master category name
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/category',
+          type: 'GET',
+          dataType: 'json',
+          data: {
+            masterCategoryName: selectedMasterCategoryName
+          },
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownCategoryNameForSubCategory').empty();
+            // Add default option
+            $('#dropdownCategoryNameForSubCategory').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownCategoryNameForSubCategory').append('<option value="' + item.categoryId + '">' + item.categoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching category dropdown data: ', error);
+          }
+        });
+      }
+    });
+
+
+    //*********************************** SAVE BRAND **************************************//
+
+    $(document).ready(function () {
+      $("#saveBrandBtn").click(function () {
+
+        if ($('#brandName').val() == '') {
+          alert("Please add brand name !");
+          $('#brandName').focus();
+
+        } else if ($('#brandDescription').val() == '') {
+          alert("Please enter your brand description !");
+          $('#brandDescription').focus();
+
+        } else if ($('#brandAddress').val() == '') {
+          alert("Please enter your brand aaddress!");
+          $('#brandAddress').focus();
+        } else {
+          loadmodal.style.display = "block";
+          var jsonData = {
+            "brandName": $('#brandName').val(),
+            "brandDescription": $('#brandDescription').val(),
+            "brandAddress": $('#brandAddress').val(),
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/brand",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-brand").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    })
+
+    //*********************************** SAVE PRODUCT **************************************//
+
+    $(document).ready(function () {
+      $("#saveProductBtn").click(function () {
+
+        if ($('#productName').val() == '') {
+          alert("Please add your product !");
+          $('#productName').focus();
+
+        } else if ($('#productDescription').val() == '') {
+          alert("Please enter your description!");
+          $('#productDescription').focus();
+
+        } else if ($('#productAvgRating').val() == '') {
+          alert("Please enter your product rating !");
+          $('#productAvgRating').focus();
+
+        } else if ($('#material').val() == '') {
+          alert("Please enter your product material !");
+          $('#material').focus();
+
+        } else {
+          loadmodal.style.display = "block";
+
+          // Get the selected master category details from the selected option
+          var selectedOption = $('#dropdownMasterCategoryNameForProduct').find(":selected");
+          var masterCategoryId = selectedOption.val();
+          var masterCategoryName = selectedOption.text();
+
+          // Get the selected category details from the selected option
+          var selectedOption2 = $('#dropdownCategoryNameForProduct').find(":selected");
+          var categoryId = selectedOption2.val();
+          var categoryName = selectedOption2.text();
+
+          // Get the selected sub-category details from the selected option
+          var selectedOption3 = $('#dropdownSubCategoryNameForProduct').find(":selected");
+          var subCategoryId = selectedOption3.val();
+          var subCategoryName = selectedOption3.text();
+
+          // Get the selected brand details from the selected option
+          var selectedOption4 = $('#dropdownBrandNameForProduct').find(":selected");
+          var brandName = selectedOption4.val();
+
+          var gender = $("input[name='gender']:checked").val();
+
+          var jsonData = {
+            "productName": $('#productName').val(),
+            "productDescription": $('#productDescription').val(),
+            "productAvgRating": $('#productAvgRating').val(),
+            "material": $('#material').val(),
+            "gender": gender,
+            "masterCategory": {
+              "masterCategoryId": masterCategoryId,
+              "masterCategoryName": masterCategoryName
+            },
+            "category": {
+              "categoryId": categoryId,
+              "categoryName": categoryName
+            },
+            "subCategory": {
+              "subCategoryId": subCategoryId,
+              "subCategoryName": subCategoryName
+            }, "brand": {
+              "brandName": brandName
+            },
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/product",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              console.log(jsonData);
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-product").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    });
+
+    //***************************** GET MASTER CATEGORY, CATEGORY AND  SUB CATEGORY FOR PRODUCT ***********************************//
+
+    $(document).ready(function () {
+      // Function to fetch master categories from the backend and populate the dropdown
+      function populateMasterCategoryDropdown() {
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/master-category',
+          type: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownMasterCategoryNameForProduct').empty();
+            // Add default option
+            $('#dropdownMasterCategoryNameForProduct').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownMasterCategoryNameForProduct').append('<option value="' + item.masterCategoryId + '">' + item.masterCategoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching master category dropdown data: ', error);
+          }
+        });
+      }
+
+      // Populate the master category dropdown when the page loads
+      populateMasterCategoryDropdown();
+
+      // Event listener for when the user selects a master category
+      $('#dropdownMasterCategoryNameForProduct').on('change', function () {
+        var selectedMasterCategoryName = $(this).find(':selected').text(); // Get the selected master category name
+        populateCategoryDropdown(selectedMasterCategoryName); // Populate the category dropdown based on the selected master category
+      });
+
+      // Event listener for when the user selects a category
+      $('#dropdownCategoryNameForProduct').on('change', function () {
+        var selectedCategoryName = $(this).find(':selected').text(); // Get the selected category name
+        populateSubCategoryDropdown(selectedCategoryName); // Populate the sub-category dropdown based on the selected category
+      });
+
+      // Function to fetch categories based on the selected master category and populate the dropdown
+      function populateCategoryDropdown(selectedMasterCategoryName) {
+        // Make an AJAX request to fetch categories based on the selected master category name
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/category',
+          type: 'GET',
+          dataType: 'json',
+          data: {
+            masterCategoryName: selectedMasterCategoryName
+          },
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownCategoryNameForProduct').empty();
+            // Add default option
+            $('#dropdownCategoryNameForProduct').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownCategoryNameForProduct').append('<option value="' + item.categoryId + '">' + item.categoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching category dropdown data: ', error);
+          }
+        });
+      }
+
+      // Function to fetch sub-categories based on the selected category and populate the dropdown
+      function populateSubCategoryDropdown(selectedCategoryName) {
+        // Make an AJAX request to fetch sub-categories based on the selected category name
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/sub-category',
+          type: 'GET',
+          dataType: 'json',
+          data: {
+            categoryName: selectedCategoryName
+          },
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownSubCategoryNameForProduct').empty();
+            // Add default option
+            $('#dropdownSubCategoryNameForProduct').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownSubCategoryNameForProduct').append('<option value="' + item.subCategoryId + '">' + item.subCategoryName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching sub-category dropdown data: ', error);
+          }
+        });
+      }
+    });
+
+    //***************************** GET BRAND FOR PRODUCT ***********************************//
+
+    $(document).ready(function () {
+      // Function to fetch data from the backend and populate the dropdown
+      function populateDropdown() {
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/brand',
+          type: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownBrandNameForProduct').empty();
+            $('#dropdownBrandNameForProduct').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownBrandNameForProduct').append('<option value="' + item.brandName + '">' + item.brandName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching dropdown data: ', error);
+          }
+        });
+      }
+      // Populate the dropdown when the page loads
+      populateDropdown();
+      // Event listener for when an option in the dropdown is clicked
+      $('#dropdownBrandNameForProduct').on('change', function () {
+        var selectedValue = $(this).val(); // Get the selected value
+        $(this).val(selectedValue).change(); // Set the selected value again to trigger change event
+      });
+    });
+
+    //*********************************** SAVE PRODUCT SKU **************************************//
+
+    $(document).ready(function () {
+      $("#saveProductSkuBtn").click(function () {
+
+        if ($('#size').val() == '') {
+          alert("Please add size !");
+          $('#size').focus();
+        } else if ($('#colour').val() == '') {
+          alert("Please enter your product colour!");
+          $('#colour').focus();
+        } else if ($('#mrp').val() == '') {
+          alert("Please enter your product mrp!");
+          $('#mrp').focus();
+        } else if ($('#discountPercentage').val() == '') {
+          alert("Please enter your product discount percentage!");
+          $('#discountPercentage').focus();
+        } else if ($('#image1').val() == '') {
+          alert("Please enter your product image1 url !");
+          $('#image1').focus();
+        } else if ($('#image2').val() == '') {
+          alert("Please enter your product image2 url !");
+          $('#image2').focus();
+        } else if ($('#quantity').val() == '') {
+          alert("Please enter your product quantity !");
+          $('#quantity').focus();
+        } else if ($('#availablePincodes').val() == '') {
+          alert("Please enter available pincodes of your product !");
+          $('#availablePincodes').focus();
+        } else if ($('#availablePincodes').val().length != 6) {
+          alert("Please enter correct available pincodes of your product !");
+          $('#availablePincodes').focus();
+        } else {
+          loadmodal.style.display = "block";
+          var selectedOption = $('#dropdownProductForProductSku').find(":selected");
+          var productId = selectedOption.val();
+
+          // Parsing quantity, discountPercentage, and mrp as floats
+          var quantity = parseFloat($('#quantity').val());
+          var discountPercentage = parseFloat($('#discountPercentage').val());
+          var mrp = parseFloat($('#mrp').val());
+
+          var jsonData = {
+            "size": $('#size').val(),
+            "colour": $('#colour').val(),
+            "mrp": mrp,
+            "discountPercentage": discountPercentage,
+            "images": {
+              "image1": $('#image1').val(),
+              "image2": $('#image2').val(),
+              "image3": $('#image3').val(),
+              "image4": $('#image4').val(),
+              "image5": $('#image5').val(),
+              "image6": $('#image6').val(),
+              "image7": $('#image7').val()
+            },
+            "quantity": quantity,
+            "availablePincodes": $('#availablePincodes').val(),
+            "productId": productId
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/product/sku",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              console.log(jsonData);
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-product-sku").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    });
+
+    //***************************** GET PRODUCT FOR PRODUCT SKU ***********************************//
+
+    $(document).ready(function () {
+      // Function to fetch data from the backend and populate the dropdown
+      function populateDropdown() {
+        $.ajax({
+          url: 'https://ecommerce-backend-product-service.onrender.com/product/get/product',
+          type: 'GET',
+          dataType: 'json',
+          success: function (data) {
+            // Clear existing options
+            $('#dropdownProductForProductSku').empty();
+            $('#dropdownProductForProductSku').append('<option value="" class="form-control">Select an option</option>');
+            // Add new options from fetched data
+            $.each(data, function (index, item) {
+              $('#dropdownProductForProductSku').append('<option value="' + item.productId + '">' + item.productName + '</option>');
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Error fetching dropdown data: ', error);
+          }
+        });
+      }
+      // Populate the dropdown when the page loads
+      populateDropdown();
+      // Event listener for when an option in the dropdown is clicked
+      $('#dropdownProductForProductSku').on('change', function () {
+        var selectedValue = $(this).val(); // Get the selected value
+        $(this).val(selectedValue).change(); // Set the selected value again to trigger change event
+      });
+    });
+
+    //*********************************** SAVE REVIEW **************************************//
+
+    $(document).ready(function () {
+      $("#saveReviewBtn").click(function () {
+
+        if ($('#customerName').val() == '') {
+          alert("Please add customer name !");
+          $('#customerName').focus();
+        } else if ($('#customerEmail').val() == '') {
+          alert("Please enter your Email!");
+          $('#customerEmail').focus();
+        } else if (!isValidEmail($('#customerEmail').val())) {
+          alert("Please enter a valid email address!");
+          $('#customerEmail').focus();
+        } else if ($('#review').val() == '') {
+          alert("Please enter your review !");
+          $('#review').focus();
+        } else if ($('#rating').val() == '') {
+          alert("Please enter product rating !");
+          $('#rating').focus();
+        } else if ($('#productId').val() == '') {
+          alert("Please enter your product id !");
+          $('#productId').focus();
+        } else {
+          loadmodal.style.display = "block";
+          // Parsing rating as floats
+          var rating = parseFloat($('#rating').val());
+          var jsonData = {
+            "customerEmail": $('#customerEmail').val(),
+            "customerName": $('#customerName').val(),
+            "review": $('#review').val(),
+            "rating": rating,
+            "productId": $('#productId').val()
+          };
+
+          $.ajax({
+            "url": "https://ecommerce-backend-product-service.onrender.com/product/add/review",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+              "Authorization": "",
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(jsonData),
+            success: function (response) {
+              console.log(jsonData);
+              loadmodal.style.display = "none";
+              console.log("response", response);
+              if (response) {
+                window.location.href = "thank-you.html";
+                document.getElementById("contest-form-review").reset();
+              } else {
+                alert(response);
+              }
+            },
+            error: function (xhr, status, error) {
+              loadmodal.style.display = "none";
+              var err = eval("(" + xhr.responseText + ")");
+              alert(err.Message);
+            }
+          });
+        }
+      });
+    });
+
+    //********************* Function to validate email using regular expression **********************//
+
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    //***************************** CHECK QUESTIONVALUE VALIDATION ***********************************//
+
+    function questionValue(event) {
+      console.log(event.target.value.trim().length)
+      // const charCode = (event.which) ? event.which : event.keyCode;
+      if (event.charCode === 32 && event.target.value.trim().length == 0) {
+        event.preventDefault();
+        this.validCharacter = false;
+        console.log('if-------');
+        return this.validCharacter;
+      } else if (event.target.value.length > 0) {
+        this.validCharacter = ((event.charCode > 64 && event.charCode < 91) || // Uppercase letters
+          (event.charCode > 96 && event.charCode < 123) || // Lowercase letters
+          (event.charCode >= 48 && event.charCode <= 57) || // Numbers
+          (event.charCode >= 33 && event.charCode <= 47) || // Special characters
+          (event.charCode >= 58 && event.charCode <= 64) || // Special characters
+          (event.charCode >= 91 && event.charCode <= 96) || // Special characters
+          (event.charCode >= 123 && event.charCode <= 126) || // Special characters
+          event.charCode == 32); // Space
+        console.log('else if-------');
+        return this.validCharacter;
+      } else {
+        this.validCharacter = ((event.charCode > 64 && event.charCode < 91) || // Uppercase letters
+          (event.charCode > 96 && event.charCode < 123)); // Lowercase letters
+        console.log('else-------');
+        return this.validCharacter;
+      }
+    }
+
+    //***************************** CHECK NAMEVALUE VALIDATION ***********************************//
+
+    function checknameValue(event) {
+      console.log(event.target.value.trim().length)
+      // const charCode = (event.which) ? event.which : event.keyCode;
+      if (event.charCode === 32 && event.target.value.trim().length == 0) {
+        event.preventDefault();
+        this.validCharacter = false;
+        console.log('if-------')
+        return this.validCharacter;
+      } else if (event.target.value.length > 0) {
+        this.validCharacter = (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32;
+        console.log('else if-------')
+        return this.validCharacter;
+      } else {
+        this.validCharacter = (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123);
+        console.log('else-------')
+        return this.validCharacter;
+      }
+    }
+
+    //***************************** CHECK NUMBER VALIDATION ***********************************//
+
+    function onlyNumberKey(evt) {
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+        return false;
+      return true;
+    }
+
+    //***************************** CHECK FLOAT VALIDATION ***********************************//
+
+    function decimalKey(evt) {
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode;
+      if (ASCIICode == 46) {
+        // Allow decimal point
+        return true;
+      } else if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) {
+        // Allow digits
+        return false;
+      }
+      return true;
+    }
+
+  </script>
+
+
+</body>
+
+</html>
