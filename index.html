@@ -369,7 +369,7 @@
                         <label><span class="txt-bengali">Available Pincodes</span> :<span
                             class="required">*</span></label>
                         <input type="text" name="availablePincodes" class="form-control" id="availablePincodes"
-                          placeholder="Enter Available Pincodes" onkeypress="return onlyNumberKey(event)" maxlength="6"
+                          placeholder="Enter Available Pincodes" maxlength="6"
                           minlength="6"></input>
                       </div>
                       <div class="form-group col-md-6">
@@ -1080,9 +1080,6 @@
           $('#quantity').focus();
         } else if ($('#availablePincodes').val() == '') {
           alert("Please enter available pincodes of your product !");
-          $('#availablePincodes').focus();
-        } else if ($('#availablePincodes').val().length != 6) {
-          alert("Please enter correct available pincodes of your product !");
           $('#availablePincodes').focus();
         } else {
           loadmodal.style.display = "block";
